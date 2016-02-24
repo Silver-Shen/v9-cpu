@@ -72,28 +72,28 @@ root/usr/funcall.c  16:     out(f, *s++);
 00000044  ffffb805  JSR   0xffffffb8 (TO 0x0) //call out 
 00000048  00001001  ENT   0x10 (D 16) //free space
 root/usr/funcall.c  17:   return i;
-0000004c  0000040e  LL    0x4 (D 4) 
-00000050  00000157  SUBI  0x1 (D 1)
-00000054  00000440  SL    0x4 (D 4)
-00000058  00000154  ADDI  0x1 (D 1)
-0000005c  00000086  BNZ   <fwd>
-00000060  0000040e  LL    0x4 (D 4)
+0000004c  0000040e  LL    0x4 (D 4) //a = n 
+00000050  00000157  SUBI  0x1 (D 1) //a--
+00000054  00000440  SL    0x4 (D 4) //save a (n-1)
+00000058  00000154  ADDI  0x1 (D 1) //a++
+0000005c  00000086  BNZ   <fwd> //if a==0 branch
+00000060  0000040e  LL    0x4 (D 4) 
 00000064  00000802  LEV   0x8 (D 8)
 root/usr/funcall.c  18: }  
 root/usr/funcall.c  19: 
 root/usr/funcall.c  20: main()
-00000068  00000802  LEV   0x8 (D 8)
+00000068  00000802  LEV   0x8 (D 8) //alloc space
 root/usr/funcall.c  21: {
 root/usr/funcall.c  22: 
 root/usr/funcall.c  23:   //Change S1/S2 ID to your student ID, and change 12 to new str length
 root/usr/funcall.c  24:   ret = write(1, "2013011371 2013011404",22);
-0000006c  00001a9e  PSHI  0x1a (D 26)
-00000070  00000008  LEAG  0x0 (D 0)
-00000074  0000009d  PSHA
-00000078  0000019e  PSHI  0x1 (D 1)
-0000007c  ffff9005  JSR   0xffffff90 (TO 0x10)
-00000080  00001801  ENT   0x18 (D 24)
-00000084  00000045  SG    0x0 (D 0)
+0000006c  00001a9e  PSHI  0x1a (D 22) //push string length
+00000070  00000008  LEAG  0x0 (D 0) //a = address of string
+00000074  0000009d  PSHA //push a
+00000078  0000019e  PSHI  0x1 (D 1) //push 1
+0000007c  ffff9005  JSR   0xffffff90 (TO 0x10) //call write
+00000080  00001801  ENT   0x18 (D 24) //free space
+00000084  00000045  SG    0x0 (D 0) 
 root/usr/funcall.c  25:   asm(HALT);
 00000088  00000000  HALT
 root/usr/funcall.c  26: }

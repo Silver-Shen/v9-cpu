@@ -8,3 +8,4 @@ gcc -o xem -O3 -m32 -Ilinux -Iroot/lib root/bin/em.c -lm
 ./xc -o os1 -Iroot/lib root/usr/os/os1.c
 ./xc -o os2 -Iroot/lib root/usr/os/os2.c
 ./xc -o os3 -Iroot/lib root/usr/os/os3.c
+./xc -s -Iroot/lib root/usr/os/os0.c >os0.txt
