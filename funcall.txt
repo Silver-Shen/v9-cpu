@@ -82,7 +82,7 @@ root/usr/funcall.c  17:   return i;
 root/usr/funcall.c  18: }  
 root/usr/funcall.c  19: 
 root/usr/funcall.c  20: main()
-00000068  00000802  LEV   0x8 (D 8) //alloc space
+00000068  00000802  LEV   0x8 (D 8) //free space
 root/usr/funcall.c  21: {
 root/usr/funcall.c  22: 
 root/usr/funcall.c  23:   //Change S1/S2 ID to your student ID, and change 12 to new str length
