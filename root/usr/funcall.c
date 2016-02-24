@@ -21,6 +21,6 @@ main()
 {
 
   //Change S1/S2 ID to your student ID, and change 12 to new str length
-  ret = write(1, "S1_ID S2_ID",12);
+  ret = write(1, "2013011371 20130114040000",26);
   asm(HALT);
 }
