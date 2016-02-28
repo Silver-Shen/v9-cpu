@@ -2,6 +2,7 @@
 *~
 xc
 xem
+dis
 emhello
 emhello.txt
 os0
@@ -9,6 +10,11 @@ os1
 os2
 os3
 build
+<<<<<<< HEAD
+=======
+funcall
+funcall.s
+>>>>>>> 091088c7b9befe77dafb81782ebafd48872acc2c
 backup*
 root/bin/c
 fs.img
