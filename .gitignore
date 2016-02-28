@@ -10,10 +10,11 @@ os1
 os2
 os3
 build
+<<<<<<< HEAD
 funcall
 funcall.s
-funcall.txt
-os*.txt
+=======
+>>>>>>> 7c881907d3391fd9b6d85ee9f19aae323356237b
 backup*
 root/bin/c
 fs.img
