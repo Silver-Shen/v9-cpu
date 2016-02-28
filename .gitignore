@@ -11,10 +11,15 @@ os2
 os3
 build
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 funcall
 funcall.s
 >>>>>>> 091088c7b9befe77dafb81782ebafd48872acc2c
+=======
+=======
+>>>>>>> 7c881907d3391fd9b6d85ee9f19aae323356237b
+>>>>>>> efe12757f4b9d0d1ee5306efced9f25121d2ecfb
 backup*
 root/bin/c
 fs.img
