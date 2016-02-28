@@ -1,3 +1,0 @@
-/home/zyshen/Desktop/v9-cpu/CMakeFiles/v9_cpu.dir
-/home/zyshen/Desktop/v9-cpu/CMakeFiles/xc.dir
-/home/zyshen/Desktop/v9-cpu/CMakeFiles/ALL.dir
